@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Spring00-LooselyCoupled/Spring00-LooselyCoupled.iml" filepath="$PROJECT_DIR$/Spring00-LooselyCoupled/Spring00-LooselyCoupled.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring00-TightlyCoupled/Spring00-TightlyCoupled.iml" filepath="$PROJECT_DIR$/Spring00-TightlyCoupled/Spring00-TightlyCoupled.iml" />
     </modules>
   </component>

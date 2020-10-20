@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Spring02-DependencyInjection-ConstructorInjection" />
         <module name="Spring01-SpringContainer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Spring01-SpringContainer" target="1.8" />
+      <module name="Spring02-DependencyInjection-ConstructorInjection" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

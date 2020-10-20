@@ -19,8 +19,12 @@ public class AppTest {
 
         //**************Another Way**********************************//
 
+
+        //Accept one parameter - config file to create a container
+        //Using getBean method by bean id
+        //Returns object class - need to downcast (polymorphic) to reference type (left side)
         ApplicationContext container2 = new ClassPathXmlApplicationContext("config.xml");
-        //Instead of downcasting
+        //Instead of downcasting - auto downcast
         Mentor mentor2 = container2.getBean("fullTimeMentor", Mentor.class);
     }
 }

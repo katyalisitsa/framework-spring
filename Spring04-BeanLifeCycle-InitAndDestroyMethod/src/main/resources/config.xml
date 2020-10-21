@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--shows all methods frm bean's class-->
+    <!--Java class has init and destroy method-->
+    <!--Java bean has init and destroy method-->
+    <bean id ="java" class="com.myApp.services.Java" init-method="myInitMethod" destroy-method="myDestroyMethod"></bean>
+
+</beans>

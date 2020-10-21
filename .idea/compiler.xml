@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Spring02-DependencyInjection-ConstructorInjection" />
         <module name="Spring02-DependencyInjection-SetterInjection" />
+        <module name="Spring03-BeanScopeSingleton-Protopype" />
         <module name="Spring01-SpringContainer" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
       <module name="Spring01-SpringContainer" target="1.8" />
       <module name="Spring02-DependencyInjection-ConstructorInjection" target="6" />
       <module name="Spring02-DependencyInjection-SetterInjection" target="6" />
+      <module name="Spring03-BeanScopeSingleton-Protopype" target="6" />
     </bytecodeTargetLevel>
   </component>
 </project>

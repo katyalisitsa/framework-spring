@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/Spring01-SpringContainer/pom.xml" />
         <option value="$PROJECT_DIR$/Spring02-DependencyInjection-ConstructorInjection/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring02-DependencyInjection-SetterInjection/pom.xml" />
       </list>
     </option>
   </component>

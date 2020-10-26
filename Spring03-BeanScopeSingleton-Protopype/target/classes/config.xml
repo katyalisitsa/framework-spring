@@ -4,7 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id ="java" class="com.myApp.services.Java" scope="singleton"></bean>
+    <!-- singleton - points to the same object-->
+    <!-- prototype - points to the different objects-->
+
+    <bean id ="java" class="com.myApp.services.Java" scope="prototype"></bean>
     <bean id = "selenium" class="com.myApp.services.Selenium"></bean>
 
 </beans>

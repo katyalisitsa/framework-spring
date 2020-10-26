@@ -20,7 +20,7 @@
       <module name="Spring02-DependencyInjection-SetterInjection" target="6" />
       <module name="Spring03-BeanScopeSingleton-Protopype" target="6" />
       <module name="Spring04-BeanLifeCycle-InitAndDestroyMethod" target="6" />
-      <module name="Spring05-JavaAnnotations-Component" target="1.5" />
+      <module name="Spring05-JavaAnnotations-Component" target="6" />
     </bytecodeTargetLevel>
   </component>
 </project>

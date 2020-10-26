@@ -12,6 +12,7 @@
         <module name="Spring03-BeanScopeSingleton-Protopype" />
         <module name="Spring05-JavaAnnotations-Value" />
         <module name="Spring02-DependencyInjection-ConstructorInjection" />
+        <module name="Spring06-JavaCode-Configuration" />
         <module name="Spring05-JavaAnnotations-Autowired" />
         <module name="Spring02-DependencyInjection-SetterInjection" />
         <module name="Spring05-JavaAnnotations-Component" />
@@ -27,6 +28,7 @@
       <module name="Spring05-JavaAnnotations-Component" target="6" />
       <module name="Spring05-JavaAnnotations-Qualifier" target="6" />
       <module name="Spring05-JavaAnnotations-Value" target="6" />
+      <module name="Spring06-JavaCode-Configuration" target="6" />
     </bytecodeTargetLevel>
   </component>
 </project>

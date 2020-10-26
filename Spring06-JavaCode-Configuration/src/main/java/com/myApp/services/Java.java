@@ -2,9 +2,7 @@ package com.myApp.services;
 
 import com.myApp.interfaces.Course;
 import lombok.ToString;
-import org.springframework.stereotype.Component;
 
-@Component
 @ToString
 public class Java implements Course {
 

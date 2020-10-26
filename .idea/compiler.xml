@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring04-BeanLifeCycle-InitAndDestroyMethod" />
-        <module name="Spring02-DependencyInjection-ConstructorInjection" />
-        <module name="Spring02-DependencyInjection-SetterInjection" />
-        <module name="Spring03-BeanScopeSingleton-Protopype" />
         <module name="Spring01-SpringContainer" />
+        <module name="Spring03-BeanScopeSingleton-Protopype" />
+        <module name="Spring02-DependencyInjection-ConstructorInjection" />
+        <module name="Spring05-JavaAnnotations-Autowired" />
+        <module name="Spring02-DependencyInjection-SetterInjection" />
+        <module name="Spring05-JavaAnnotations-Component" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +21,8 @@
       <module name="Spring02-DependencyInjection-SetterInjection" target="6" />
       <module name="Spring03-BeanScopeSingleton-Protopype" target="6" />
       <module name="Spring04-BeanLifeCycle-InitAndDestroyMethod" target="6" />
+      <module name="Spring05-JavaAnnotations-Autowired" target="6" />
+      <module name="Spring05-JavaAnnotations-Component" target="6" />
     </bytecodeTargetLevel>
   </component>
 </project>

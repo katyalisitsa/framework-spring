@@ -2,8 +2,10 @@ package com.myApp.services;
 
 import com.myApp.interfaces.Course;
 import com.myApp.interfaces.ExtraSessions;
+import lombok.ToString;
 import org.springframework.beans.factory.annotation.Value;
 
+@ToString
 public class Java implements Course {
 
     private ExtraSessions extraSessions;

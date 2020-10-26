@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring05-JavaAnnotations-Component/Spring05-JavaAnnotations-Component.iml" filepath="$PROJECT_DIR$/Spring05-JavaAnnotations-Component/Spring05-JavaAnnotations-Component.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring05-JavaAnnotations-Qualifier/Spring05-JavaAnnotations-Qualifier.iml" filepath="$PROJECT_DIR$/Spring05-JavaAnnotations-Qualifier/Spring05-JavaAnnotations-Qualifier.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring05-JavaAnnotations-Value/Spring05-JavaAnnotations-Value.iml" filepath="$PROJECT_DIR$/Spring05-JavaAnnotations-Value/Spring05-JavaAnnotations-Value.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring06-JavaCode-Configuration/Spring06-JavaCode-Configuration.iml" filepath="$PROJECT_DIR$/Spring06-JavaCode-Configuration/Spring06-JavaCode-Configuration.iml" />
     </modules>
   </component>
 </project>

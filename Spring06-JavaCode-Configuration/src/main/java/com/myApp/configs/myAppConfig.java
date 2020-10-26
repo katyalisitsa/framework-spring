@@ -14,12 +14,21 @@ public class myAppConfig {
     //Bean is used when using third-party classes and can not manipulate class to add @Component annotation
     @Bean
     public Java java(){
-        return new Java();
+
+        //Adding bean name as a parameter for dependency injection
+        return new Java("officeHours");
     }
 
     @Bean
     public Selenium selenium(){
+
         return new Selenium();
+    }
+
+    @Bean
+    public OfficeHours officeHours(){
+
+        return new OfficeHours();
     }
 
 

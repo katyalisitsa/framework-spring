@@ -1,5 +1,6 @@
 package com.myApp.configs;
 
+import com.myApp.interfaces.ExtraSessions;
 import com.myApp.services.Java;
 import com.myApp.services.OfficeHours;
 import com.myApp.services.Selenium;
@@ -32,6 +33,13 @@ public class myAppConfig {
         return new OfficeHours();
     }
 
+    //Polymorphic way
+    //@Bean
+    /*
+     public ExtraSessions extraSessions(){
+        return new OfficeHours();
+    }
+    */
 
 
 

@@ -1,6 +1,7 @@
 package com.myApp.configs;
 
 import com.myApp.services.Java;
+import com.myApp.services.OfficeHours;
 import com.myApp.services.Selenium;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -16,7 +17,7 @@ public class myAppConfig {
     public Java java(){
 
         //Adding bean name as a parameter for dependency injection
-        return new Java("officeHours");
+        return new Java(officeHours());
     }
 
     @Bean

@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 public class myAppConfig {
 
     //Method level bean creation
+    //Bean is used when using third-party classes and can not manipulate class to add @Component annotation
     @Bean
     public Java java(){
         return new Java();

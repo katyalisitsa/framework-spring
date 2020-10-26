@@ -9,15 +9,18 @@ import org.springframework.stereotype.Component;
 @Component
 public class Java implements Course {
 
+    /*
     @Autowired
     //ID of qualified bean
     @Qualifier("officeHours")
+     */
     private ExtraSessions extraSessions;
 
-    /*@Autowired
-    public Java(ExtraSessions extraSessions) {
+    //@Qualifier with constructor injection
+    @Autowired
+    public Java(@Qualifier("officeHours") ExtraSessions extraSessions) {
         this.extraSessions = extraSessions;
-    }*/
+    }
 
     public void getTeachingHours() {
 

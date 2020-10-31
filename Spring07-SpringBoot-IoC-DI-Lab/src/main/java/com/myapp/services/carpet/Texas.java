@@ -28,5 +28,6 @@ public class Texas implements Carpet {
         //Optional incase value is null, or object in the memory doesn't exist
         Optional <Map.Entry<City, BigDecimal>> collect =  sqPriceForCity.entrySet().stream().filter(x -> x.getKey() == city).findFirst();
 
-        return collect.isPresent() ? collect.get().getValue() : defaultValue;    }
+        return collect.isPresent() ? collect.get().getValue() : defaultValue;
+    }
 }

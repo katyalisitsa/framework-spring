@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/Spring06-JavaCode-Configuration/pom.xml" />
         <option value="$PROJECT_DIR$/Spring06-JavaCode-PostConstruct-PreDestroy/pom.xml" />
         <option value="$PROJECT_DIR$/Spring07-SpringBoot-Initial/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring07-SpringBoot-IoC-DI-Lab/pom.xml" />
       </list>
     </option>
   </component>

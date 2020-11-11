@@ -6,19 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring05-JavaAnnotations-Value" />
-        <module name="Spring05-JavaAnnotations-Qualifier" />
-        <module name="Spring04-BeanLifeCycle-InitAndDestroyMethod" />
-        <module name="Spring05-JavaAnnotations-Autowired" />
-        <module name="Spring02-DependencyInjection-ConstructorInjection" />
-        <module name="Spring06-JavaCode-Configuration" />
-        <module name="Spring07-SpringBoot-Initial" />
-        <module name="Spring06-JavaCode-PostConstruct-PreDestroy" />
-        <module name="Spring01-SpringContainer" />
         <module name="Spring02-DependencyInjection-SetterInjection" />
-        <module name="Spring03-BeanScopeSingleton-Protopype" />
-        <module name="Spring07-SpringBoot-IoC-DI-Lab" />
+        <module name="Spring05-JavaAnnotations-Value" />
         <module name="Spring05-JavaAnnotations-Component" />
+        <module name="Spring04-BeanLifeCycle-InitAndDestroyMethod" />
+        <module name="Spring07-SpringBoot-Initial" />
+        <module name="Spring03-BeanScopeSingleton-Protopype" />
+        <module name="Spring08-SpringBoot-MVC-Controller" />
+        <module name="Spring06-JavaCode-Configuration" />
+        <module name="Spring02-DependencyInjection-ConstructorInjection" />
+        <module name="Spring05-JavaAnnotations-Qualifier" />
+        <module name="Spring06-JavaCode-PostConstruct-PreDestroy" />
+        <module name="Spring07-SpringBoot-IoC-DI-Lab" />
+        <module name="Spring01-SpringContainer" />
+        <module name="Spring05-JavaAnnotations-Autowired" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,12 +36,14 @@
       <module name="Spring06-JavaCode-PostConstruct-PreDestroy" target="6" />
       <module name="Spring07-SpringBoot-Initial" target="1.8" />
       <module name="Spring07-SpringBoot-IoC-DI-Lab" target="1.8" />
+      <module name="Spring08-SpringBoot-MVC-Controller" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Spring07-SpringBoot-Initial" options="-parameters" />
       <module name="Spring07-SpringBoot-IoC-DI-Lab" options="-parameters" />
+      <module name="Spring08-SpringBoot-MVC-Controller" options="-parameters" />
     </option>
   </component>
 </project>

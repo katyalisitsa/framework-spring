@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring06-JavaCode-PostConstruct-PreDestroy/Spring06-JavaCode-PostConstruct-PreDestroy.iml" filepath="$PROJECT_DIR$/Spring06-JavaCode-PostConstruct-PreDestroy/Spring06-JavaCode-PostConstruct-PreDestroy.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring07-SpringBoot-Initial/Spring07-SpringBoot-Initial.iml" filepath="$PROJECT_DIR$/Spring07-SpringBoot-Initial/Spring07-SpringBoot-Initial.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring07-SpringBoot-IoC-DI-Lab/Spring07-SpringBoot-IoC-DI-Lab.iml" filepath="$PROJECT_DIR$/Spring07-SpringBoot-IoC-DI-Lab/Spring07-SpringBoot-IoC-DI-Lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring08-SpringBoot-MVC-Controller/Spring08-SpringBoot-MVC-Controller.iml" filepath="$PROJECT_DIR$/Spring08-SpringBoot-MVC-Controller/Spring08-SpringBoot-MVC-Controller.iml" />
     </modules>
   </component>
 </project>

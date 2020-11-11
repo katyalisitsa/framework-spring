@@ -16,10 +16,11 @@
         <option value="$PROJECT_DIR$/Spring06-JavaCode-PostConstruct-PreDestroy/pom.xml" />
         <option value="$PROJECT_DIR$/Spring07-SpringBoot-Initial/pom.xml" />
         <option value="$PROJECT_DIR$/Spring07-SpringBoot-IoC-DI-Lab/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring08-SpringBoot-MVC-Controller/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="false">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

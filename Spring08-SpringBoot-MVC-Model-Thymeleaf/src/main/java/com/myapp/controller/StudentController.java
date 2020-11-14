@@ -28,6 +28,8 @@ public class StudentController {
         numbers.add(2);
         numbers.add(3);
         numbers.add(4);
+        numbers.add(5);
+        numbers.add(6);
         model.addAttribute("numbers",numbers);
 
         /*LocalDate birthday = new Date.now();
@@ -38,6 +40,12 @@ public class StudentController {
         Student student = new Student(1, "Kate", "Lysy");
         model.addAttribute("student", student);
         return "student/welcome";
+    }
+
+    @GetMapping("/register")
+    public String homePage2(){
+
+        return "student/register";
     }
 
 }

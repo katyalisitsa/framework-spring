@@ -19,6 +19,7 @@
         <module name="Spring05-JavaAnnotations-Qualifier" />
         <module name="Spring08-SpringBoot-MVC-Model-Thymeleaf" />
         <module name="Spring06-JavaCode-PostConstruct-PreDestroy" />
+        <module name="Spring08-SpringBoot-MVC-Form" />
         <module name="Spring07-SpringBoot-IoC-DI-Lab" />
         <module name="Spring01-SpringContainer" />
         <module name="Spring05-JavaAnnotations-Autowired" />
@@ -39,8 +40,8 @@
       <module name="Spring07-SpringBoot-Initial" target="1.8" />
       <module name="Spring07-SpringBoot-IoC-DI-Lab" target="1.8" />
       <module name="Spring08-SpringBoot-MVC-Controller" target="11" />
-      <module name="Spring08-SpringBoot-MVC-Model-Thymeleaf" target="15" />
-      <module name="Spring08-SpringBoot-MVC-Model-View-Thymeleaf" target="15" />
+      <module name="Spring08-SpringBoot-MVC-Form" target="11" />
+      <module name="Spring08-SpringBoot-MVC-Model-Thymeleaf" target="14" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -48,8 +49,8 @@
       <module name="Spring07-SpringBoot-Initial" options="-parameters" />
       <module name="Spring07-SpringBoot-IoC-DI-Lab" options="-parameters" />
       <module name="Spring08-SpringBoot-MVC-Controller" options="-parameters" />
+      <module name="Spring08-SpringBoot-MVC-Form" options="-parameters" />
       <module name="Spring08-SpringBoot-MVC-Model-Thymeleaf" options="-parameters" />
-      <module name="Spring08-SpringBoot-MVC-Model-View-Thymeleaf" options="-parameters" />
     </option>
   </component>
 </project>

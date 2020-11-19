@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>You just landed in the new view</h1>
+<h2 th:text="${mentor.firstName + ' ' + mentor.lastName}"></h2>
+<h4 th:text="${mentor.gender}"></h4>
+<h4 th:text="${mentor.company}"></h4>
+
+</body>
+</html>

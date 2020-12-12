@@ -11,16 +11,17 @@
         <module name="Spring05-JavaAnnotations-Value" />
         <module name="Spring05-JavaAnnotations-Component" />
         <module name="Spring04-BeanLifeCycle-InitAndDestroyMethod" />
-        <module name="Spring07-SpringBoot-Initial" />
-        <module name="Spring03-BeanScopeSingleton-Protopype" />
+        <module name="Spring08-SpringBoot-MVC-Form" />
+        <module name="Spring09-ORM-TableCreation" />
         <module name="Spring08-SpringBoot-MVC-Controller" />
         <module name="Spring06-JavaCode-Configuration" />
         <module name="Spring02-DependencyInjection-ConstructorInjection" />
         <module name="Spring05-JavaAnnotations-Qualifier" />
         <module name="Spring08-SpringBoot-MVC-Model-Thymeleaf" />
         <module name="Spring06-JavaCode-PostConstruct-PreDestroy" />
-        <module name="Spring08-SpringBoot-MVC-Form" />
+        <module name="Spring07-SpringBoot-Initial" />
         <module name="Spring07-SpringBoot-IoC-DI-Lab" />
+        <module name="Spring03-BeanScopeSingleton-Protopype" />
         <module name="Spring01-SpringContainer" />
         <module name="Spring05-JavaAnnotations-Autowired" />
       </profile>
@@ -42,6 +43,7 @@
       <module name="Spring08-SpringBoot-MVC-Controller" target="11" />
       <module name="Spring08-SpringBoot-MVC-Form" target="11" />
       <module name="Spring08-SpringBoot-MVC-Model-Thymeleaf" target="14" />
+      <module name="Spring09-ORM-TableCreation" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -51,6 +53,7 @@
       <module name="Spring08-SpringBoot-MVC-Controller" options="-parameters" />
       <module name="Spring08-SpringBoot-MVC-Form" options="-parameters" />
       <module name="Spring08-SpringBoot-MVC-Model-Thymeleaf" options="-parameters" />
+      <module name="Spring09-ORM-TableCreation" options="-parameters" />
     </option>
   </component>
 </project>

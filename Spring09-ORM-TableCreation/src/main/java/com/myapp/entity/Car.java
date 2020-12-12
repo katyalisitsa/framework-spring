@@ -1,9 +1,9 @@
 package com.myapp.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "cars")
 public class Car {
 
     @Id

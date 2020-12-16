@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Spring05-JavaAnnotations-Value" />
         <module name="Spring05-JavaAnnotations-Component" />
-        <module name="Spring09-ORM-Mapping-OneToOne" />
         <module name="Spring08-SpringBoot-MVC-Form" />
         <module name="Spring08-SpringBoot-MVC-Controller" />
         <module name="Spring06-JavaCode-PostConstruct-PreDestroy" />
@@ -19,6 +18,7 @@
         <module name="Spring07-SpringBoot-Initial" />
         <module name="Spring08-SpringBoot-MVC-Model-Thymeleaf" />
         <module name="Spring09-ORM-TableCreation" />
+        <module name="Spring09-ORM-Mapping-ManyToOne" />
         <module name="Spring07-SpringBoot-IoC-DI-Lab" />
         <module name="Spring01-SpringContainer" />
         <module name="Spring05-JavaAnnotations-Autowired" />
@@ -59,6 +59,7 @@
       <module name="Spring08-SpringBoot-MVC-Controller" target="11" />
       <module name="Spring08-SpringBoot-MVC-Form" target="11" />
       <module name="Spring08-SpringBoot-MVC-Model-Thymeleaf" target="14" />
+      <module name="Spring09-ORM-Mapping-ManyToOne" target="11" />
       <module name="Spring09-ORM-Mapping-OneToOne" target="11" />
       <module name="Spring09-ORM-TableCreation" target="11" />
     </bytecodeTargetLevel>
@@ -70,6 +71,7 @@
       <module name="Spring08-SpringBoot-MVC-Controller" options="-parameters" />
       <module name="Spring08-SpringBoot-MVC-Form" options="-parameters" />
       <module name="Spring08-SpringBoot-MVC-Model-Thymeleaf" options="-parameters" />
+      <module name="Spring09-ORM-Mapping-ManyToOne" options="-parameters" />
       <module name="Spring09-ORM-Mapping-OneToOne" options="-parameters" />
       <module name="Spring09-ORM-TableCreation" options="-parameters" />
     </option>

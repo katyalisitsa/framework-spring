@@ -1,5 +1,5 @@
 package com.orm.demo.entity;
-import com.orm2.enums.Gender;
+import com.orm.demo.enums.Gender;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -21,6 +21,8 @@ public class Employee extends BaseEntity{
     @Column(columnDefinition = "DATE")
     private LocalDate hireDate;
 
+    @OneToOne(cascade=CascadeType.ALL)
+    @JoinColumn(name="department_id")
     private Department department;
 
     public Employee(String firstName, String lastName, String email, LocalDate hireDate, Gender gender, int salary) {

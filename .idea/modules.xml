@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring08-SpringBoot-MVC-Controller/Spring08-SpringBoot-MVC-Controller.iml" filepath="$PROJECT_DIR$/Spring08-SpringBoot-MVC-Controller/Spring08-SpringBoot-MVC-Controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring08-SpringBoot-MVC-Form/Spring08-SpringBoot-MVC-Form.iml" filepath="$PROJECT_DIR$/Spring08-SpringBoot-MVC-Form/Spring08-SpringBoot-MVC-Form.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring08-SpringBoot-MVC-Model-Thymeleaf/Spring08-SpringBoot-MVC-Model-Thymeleaf.iml" filepath="$PROJECT_DIR$/Spring08-SpringBoot-MVC-Model-Thymeleaf/Spring08-SpringBoot-MVC-Model-Thymeleaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring09-ORM-Mapping-One-ToOne/Spring09-ORM-Mapping-OneToOne.iml" filepath="$PROJECT_DIR$/Spring09-ORM-Mapping-One-ToOne/Spring09-ORM-Mapping-OneToOne.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring09-ORM-TableCreation/Spring09-ORM-TableCreation.iml" filepath="$PROJECT_DIR$/Spring09-ORM-TableCreation/Spring09-ORM-TableCreation.iml" />
     </modules>
   </component>

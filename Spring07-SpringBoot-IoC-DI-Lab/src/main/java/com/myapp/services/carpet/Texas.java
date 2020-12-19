@@ -26,7 +26,7 @@ public class Texas implements Carpet {
 
         //Convert Map to Set objects
         //Optional incase value is null, or object in the memory doesn't exist
-        Optional <Map.Entry<City, BigDecimal>> collect =  sqPriceForCity.entrySet().stream().filter(x -> x.getKey() == city).findFirst();
+        Optional<Map.Entry<City, BigDecimal>> collect = sqPriceForCity.entrySet().stream().filter(x -> x.getKey() == city).findFirst();
 
         return collect.isPresent() ? collect.get().getValue() : defaultValue;
     }

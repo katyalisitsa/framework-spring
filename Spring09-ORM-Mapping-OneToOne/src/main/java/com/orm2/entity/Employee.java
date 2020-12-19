@@ -1,4 +1,5 @@
 package com.orm2.entity;
+
 import com.orm2.enums.Gender;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,8 +12,8 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name="employees")
-public class Employee extends BaseEntity{
+@Table(name = "employees")
+public class Employee extends BaseEntity {
 
     private String firstName;
     private String lastName;

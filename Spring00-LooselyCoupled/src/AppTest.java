@@ -14,6 +14,6 @@ public class AppTest {
         MentorAccount mentor = new MentorAccount(partTime);
 
         mentor.manageAccount();
-        }
     }
+}
 

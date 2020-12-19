@@ -11,9 +11,10 @@ public class myAppTest {
     public static void main(String[] args) {
 
         //Container need reference to the beans - config xml file
-        ApplicationContext container = new ClassPathXmlApplicationContext("config.xml"); {
+        ApplicationContext container = new ClassPathXmlApplicationContext("config.xml");
+        {
 
-            Course course = container.getBean("java",Course.class);
+            Course course = container.getBean("java", Course.class);
             course.getTeachingHours();
         }
     }

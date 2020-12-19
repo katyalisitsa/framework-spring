@@ -7,9 +7,9 @@
     <bean id="java" class="com.myAppNew.services.Java">
         <!-- property name - setter method name-->
         <!-- ref - bean name from config.xml-->
-       <property name="extraSessions" ref="officeHours"/>
+        <property name="extraSessions" ref="officeHours"/>
     </bean>
-    <bean id = "selenium" class="com.myAppNew.services.Selenium"></bean>
-    <bean id = "officeHours" class="com.myAppNew.services.OfficeHours"></bean>
+    <bean id="selenium" class="com.myAppNew.services.Selenium"></bean>
+    <bean id="officeHours" class="com.myAppNew.services.OfficeHours"></bean>
 
 </beans>

@@ -11,7 +11,7 @@ public class Java implements Course {
     /*@Autowired*/
     private OfficeHours officeHours;
 
-   //Constructor injection using @Autowired annotation
+    //Constructor injection using @Autowired annotation
     //Annotation is optional if only one constructor is creaed
     //Meaning lombok @AllArgsConst can be used instead
     @Autowired

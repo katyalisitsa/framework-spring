@@ -9,11 +9,11 @@ public class Java implements Course {
         System.out.println("Weekly Teaching Hours : " + (20));
     }
 
-    public void myInitMethod(){
+    public void myInitMethod() {
         System.out.println("Executing init method");
     }
 
-    public void myDestroyMethod(){
+    public void myDestroyMethod() {
         System.out.println("Executing destroy method");
     }
 

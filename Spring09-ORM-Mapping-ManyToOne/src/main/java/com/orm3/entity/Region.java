@@ -12,13 +12,13 @@ import javax.persistence.Table;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name="regions")
+@Table(name = "regions")
 public class Region extends BaseEntity {
 
     private String region;
     private String country;
 
-    @OneToOne(mappedBy="region")
+    @OneToOne(mappedBy = "region")
     private Employee employee;
 
     public Region(String region, String country) {

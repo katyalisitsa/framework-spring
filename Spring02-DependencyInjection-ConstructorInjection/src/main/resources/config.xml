@@ -5,9 +5,9 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="java" class="com.Java">
-        <constructor-arg ref ="officeHours"/>
+        <constructor-arg ref="officeHours"/>
     </bean>
-    <bean id = "selenium" class="com.Selenium"></bean>
-    <bean id = "officeHours" class="com.myApp.services.OfficeHours"></bean>
+    <bean id="selenium" class="com.Selenium"></bean>
+    <bean id="officeHours" class="com.myApp.services.OfficeHours"></bean>
 
 </beans>

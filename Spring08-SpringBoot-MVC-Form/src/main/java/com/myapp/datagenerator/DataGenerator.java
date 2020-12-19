@@ -5,7 +5,7 @@ import java.util.List;
 
 public class DataGenerator {
 
-    public static List<String> getSateteList(){
+    public static List<String> getSateteList() {
         List<String> stateList = Arrays.asList(
                 "Alaska",
                 "Alabama",

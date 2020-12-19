@@ -7,7 +7,7 @@
     <!-- singleton - points to the same object-->
     <!-- prototype - points to the different objects-->
 
-    <bean id ="java" class="com.Java" scope="prototype"></bean>
-    <bean id = "selenium" class="com.Selenium"></bean>
+    <bean id="java" class="com.Java" scope="prototype"></bean>
+    <bean id="selenium" class="com.Selenium"></bean>
 
 </beans>

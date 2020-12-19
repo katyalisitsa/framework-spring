@@ -14,7 +14,7 @@ public class myAppRunner {
         course.getTeachingHours();
 
         //Destroy method only shown when container is destroyed (closed) - finishes bean lifecycle
-        ((ClassPathXmlApplicationContext)container).close();
+        ((ClassPathXmlApplicationContext) container).close();
 
     }
 

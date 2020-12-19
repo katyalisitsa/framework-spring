@@ -12,8 +12,8 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name="employees")
-public class Employee extends BaseEntity{
+@Table(name = "employees")
+public class Employee extends BaseEntity {
 
     private String firstName;
     private String lastName;
@@ -22,12 +22,12 @@ public class Employee extends BaseEntity{
     @Column(columnDefinition = "DATE")
     private LocalDate hireDate;
 
-    @ManyToOne(cascade={CascadeType.DETACH, CascadeType.MERGE}, fetch=FetchType.LAZY)
-    @JoinColumn(name="department_id")
+    @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE}, fetch = FetchType.LAZY)
+    @JoinColumn(name = "department_id")
     private Department department;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="region_id")
+    @JoinColumn(name = "region_id")
     private Region region;
 
     public Employee(String firstName, String lastName, String email, LocalDate hireDate, Gender gender, int salary) {

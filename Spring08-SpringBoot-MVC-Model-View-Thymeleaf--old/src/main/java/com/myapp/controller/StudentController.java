@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class StudentController {
 
     @GetMapping("/welcome")
-    public String homePage(Model model){
+    public String homePage(Model model) {
 
-        model.addAttribute("name","Kate");
-        model.addAttribute("class","CIS 406 - Java");
+        model.addAttribute("name", "Kate");
+        model.addAttribute("class", "CIS 406 - Java");
 
         return "student/welcome";
     }

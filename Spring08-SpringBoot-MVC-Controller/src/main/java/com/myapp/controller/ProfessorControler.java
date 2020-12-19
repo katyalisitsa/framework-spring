@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ProfessorControler {
 
     @GetMapping("/show")
-    public String showForm(){
+    public String showForm() {
         return "home";
     }
 }

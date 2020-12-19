@@ -11,7 +11,7 @@ public class myAppRunner {
         //can be more than one config file
         ApplicationContext container = new AnnotationConfigApplicationContext(myAppConfig.class);
 
-        Course course = container.getBean("java",Course.class);
+        Course course = container.getBean("java", Course.class);
 
         System.out.println(course.toString());
 

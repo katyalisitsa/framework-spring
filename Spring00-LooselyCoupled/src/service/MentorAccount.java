@@ -10,7 +10,7 @@ public class MentorAccount {
         this.mentor = mentor;
     }
 
-    public void manageAccount(){
+    public void manageAccount() {
         this.mentor.createAccount();
     }
 }

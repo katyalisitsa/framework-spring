@@ -14,7 +14,7 @@ public class myAppRunner {
 
         course.getTeachingHours();
         //System.out.println(course.toString());
-        ((AnnotationConfigApplicationContext)container).close();
+        ((AnnotationConfigApplicationContext) container).close();
 
     }
 }

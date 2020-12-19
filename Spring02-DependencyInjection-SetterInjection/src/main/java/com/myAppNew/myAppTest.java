@@ -9,15 +9,15 @@ public class myAppTest {
     //Rest - layer down
 
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
 
-            //Container need reference to the beans - config xml file
-            ApplicationContext container = new ClassPathXmlApplicationContext("config.xml");
+        //Container need reference to the beans - config xml file
+        ApplicationContext container = new ClassPathXmlApplicationContext("config.xml");
 
-            Course course = container.getBean("java",Course.class);
+        Course course = container.getBean("java", Course.class);
 
-            course.getTeachingHours();
+        course.getTeachingHours();
 
-        }
     }
+}

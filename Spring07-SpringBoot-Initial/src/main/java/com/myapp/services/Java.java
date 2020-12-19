@@ -11,7 +11,7 @@ public class Java implements Course {
     private ExtraSession extraSession;
 
     @Autowired
-    public Java(ExtraSession extraSession){
+    public Java(ExtraSession extraSession) {
         this.extraSession = extraSession;
     }
 

@@ -15,13 +15,13 @@ import java.util.Random;
 public class StudentController {
 
     @GetMapping("/welcome")
-    public String homePage(Model model){
+    public String homePage(Model model) {
 
-        model.addAttribute("name","Kate");
-        model.addAttribute("class","CIS 406 - Java");
+        model.addAttribute("name", "Kate");
+        model.addAttribute("class", "CIS 406 - Java");
 
         int studentId = new Random().nextInt(1000);
-        model.addAttribute("id",studentId);
+        model.addAttribute("id", studentId);
 
         List<Integer> numbers = new ArrayList<>();
         numbers.add(1);
@@ -30,7 +30,7 @@ public class StudentController {
         numbers.add(4);
         numbers.add(5);
         numbers.add(6);
-        model.addAttribute("numbers",numbers);
+        model.addAttribute("numbers", numbers);
 
         /*LocalDate birthday = new Date.now();
         model.addAttribute("birthday", birthday);
@@ -43,7 +43,7 @@ public class StudentController {
     }
 
     @GetMapping("/register")
-    public String homePage2(){
+    public String homePage2() {
 
         return "student/register";
     }

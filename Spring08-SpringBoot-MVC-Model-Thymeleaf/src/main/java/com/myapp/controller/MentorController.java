@@ -15,13 +15,13 @@ import java.util.List;
 public class MentorController {
 
     @GetMapping("/list")
-    public String showTable(Model model){
+    public String showTable(Model model) {
         List<Mentor> mentorList = new ArrayList<>();
-        mentorList.add(new Mentor("Kate","Lysy", 26, Gender.FEMALE));
-        mentorList.add(new Mentor("Zeynep","Mur", 26, Gender.FEMALE));
-        mentorList.add(new Mentor("Ozzy","Ozzy", 42, Gender.MALE));
+        mentorList.add(new Mentor("Kate", "Lysy", 26, Gender.FEMALE));
+        mentorList.add(new Mentor("Zeynep", "Mur", 26, Gender.FEMALE));
+        mentorList.add(new Mentor("Ozzy", "Ozzy", 42, Gender.MALE));
 
-        model.addAttribute("mentors",mentorList);
+        model.addAttribute("mentors", mentorList);
 
         return "mentor/mentor-list";
     }

@@ -38,7 +38,7 @@ public class OrmApplication {
 
         System.out.println("findByCountryContainingOrderByCountryDesc" + regionRepository.findByCountryContainingOrderByCountryDesc("United"));
 
-        System.out.println("findTop2ByCountry" + regionRepository.findTopBy2ByCountry("Canada"));
+        System.out.println("findTop2ByCountry" + regionRepository.findTop2ByCountry("Canada"));
 
         System.out.println("______________Regions end__________________");
     }

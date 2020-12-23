@@ -20,4 +20,7 @@ public interface EmployeeRepository extends JpaRepository<Employee,String> {
 
     //Display all meployees where last name starts with ''
     List<Employee> findByLastNameStartingWith(String pattern);
+
+    //Display all employees with salary higer than ''
+    List<Employee> findBySalaryGreaterThan(Integer salary);
 }

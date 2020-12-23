@@ -11,6 +11,7 @@ import java.time.LocalDate;
 @Entity
 @Getter
 @Setter
+@ToString
 @NoArgsConstructor
 @Table(name="employees")
 public class Employee extends BaseEntity{

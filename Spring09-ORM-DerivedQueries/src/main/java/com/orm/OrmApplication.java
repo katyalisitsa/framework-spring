@@ -54,6 +54,9 @@ public class OrmApplication {
     public void testEmployees(){
 
         System.out.println("______________Employees start__________________");
+
+        System.out.println(employeeRepository.findByEmailIsNull());
+
         System.out.println("______________Employees end__________________");
     }
 }

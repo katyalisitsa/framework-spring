@@ -22,5 +22,5 @@ public interface RegionRepositroty extends JpaRepository<Region,Integer> {
     List<Region> findByCountryContainingOrderByCountryDesc(String country);
 
     //Display top 2 regions in Canada
-    List<Region> findTopBy2ByCountry(String country);
+    List<Region> findTop2ByCountry(String country);
 }

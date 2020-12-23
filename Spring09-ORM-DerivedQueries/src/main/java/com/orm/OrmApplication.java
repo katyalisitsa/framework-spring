@@ -1,6 +1,7 @@
 package com.orm;
 
 import com.orm.repository.DepartmentRepository;
+import com.orm.repository.EmployeeRepository;
 import com.orm.repository.RegionRepositroty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -16,6 +17,9 @@ public class OrmApplication {
 
     @Autowired
     DepartmentRepository departmentRepository;
+
+    @Autowired
+    EmployeeRepository employeeRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(OrmApplication.class, args);
@@ -44,5 +48,12 @@ public class OrmApplication {
 
         System.out.println("______________Departments start__________________");
         System.out.println("______________Departments end__________________");
+    }
+
+    @PostConstruct
+    public void testEmployees(){
+
+        System.out.println("______________Employees start__________________");
+        System.out.println("______________Employees end__________________");
     }
 }

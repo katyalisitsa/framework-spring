@@ -31,8 +31,8 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
     Employee getEmployeeBySalary(@Param("salary") int salary);
 
     ///multiple named parameters
-    @Query("Select e from Employee e where e.firstName=:name or e.salary=:salary")
-    List<Employee> getEmployeeByFirstNameOrSalary(@Param(firstName) String firstName, @Param(salary) int salary);
+    @Query("SELECT e FROM Employee e WHERE e.firstName=:name OR e.salary=:salary")
+    List<Employee> getEmployeeByFirstNameOrSalary(@Param("name") String name,@Param("salary") int salary);
 
     //not equal
     @Query("Select e from Employee e where e.salary <> ?1")
@@ -59,5 +59,15 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
     @Query("Select e from Employee e where e.email is not NULL")
     List<Employee> getEmployeeByEmailIsNotNull();
+
+    //Sort salary in ascending order
+    @Query("Select e from Employee e order by e.salary")
+    List<Employee> getEmployeeBySalaryOrderAsc();
+
+    //Native query
+    @Query(value = "select * from employees where salary = ?1", nativeQuery = true)
+    List<Employee> readEmployeeBySalary(int salary);
+
+
 
 }

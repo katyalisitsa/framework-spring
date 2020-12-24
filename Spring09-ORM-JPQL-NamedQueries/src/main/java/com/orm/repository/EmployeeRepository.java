@@ -11,7 +11,15 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
     @Query("Select e from Employee e where e.email = 'dtrail8@tamu.edu'")
     Employee getEmployeeDetail();
 
-    @Query("Select e.salary from Employee e where e.email = ''")
+    @Query("Select e.salary from Employee e where e.email = 'dtrail8@tamu.edu'")
     Integer getEmployeeSalary();
+
+    //single bind parameter
+    @Query("Select e from Employee e where e.email = ?1")
+    Employee getEmployeeByEmail(String email);
+
+    //multiple bind parameter
+    @Query("Select e from Employee e where e.email = ?1 and e.salary = ?2")
+    Employee getEmployeeByEmailAndSalary(String email, Integer salary);
 
 }

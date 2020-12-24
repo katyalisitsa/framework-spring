@@ -38,7 +38,7 @@ public class OrmApplication {
 
         System.out.println("findByCountryContainingOrderByCountryDesc" + regionRepository.findByCountryContainingOrderByCountryDesc("United"));
 
-        System.out.println("findTop2ByCountry" + regionRepository.findTopBy2ByCountry("Canada"));
+        System.out.println("findTop2ByCountry" + regionRepository.findTop2ByCountry("Canada"));
 
         System.out.println("______________Regions end__________________");
     }
@@ -54,6 +54,9 @@ public class OrmApplication {
     public void testEmployees(){
 
         System.out.println("______________Employees start__________________");
+
+        System.out.println(employeeRepository.findByEmailIsNull());
+
         System.out.println("______________Employees end__________________");
     }
 }

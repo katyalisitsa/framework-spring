@@ -33,12 +33,9 @@ public class DataGenerator implements CommandLineRunner {
         User admin = new User("admin", passwordEncoder.encode("admin123"), "ADMIN", "ACCESS_TEST1,ACCESS_TEST2");
         User manager = new User("manager", passwordEncoder.encode("manager123"), "MANAGER", "ACCESS_TEST1");
 
-        List<User>=Arrays.asList(employee, admin, manager);
+        List<User> users=Arrays.asList(employee, admin, manager);
         userRepository.saveAll(users);
     }
 
-    @Bean
-    PasswordEncoder passwordEncoder(){
-        return new BCryptPasswordEncoder();
-    }
+
 }

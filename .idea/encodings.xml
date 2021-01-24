@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToMany/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring07-SpringBoot-Initial/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring07-SpringBoot-IoC-DI-Lab/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring08-SpringBoot-MVC-Controller/src/main/java" charset="UTF-8" />
@@ -11,6 +10,9 @@
     <file url="file://$PROJECT_DIR$/Spring09-ORM-Mapping-ManyToMany/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring09-ORM-Mapping-ManyToOne/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring09-ORM-TableCreation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring10-Security-FormAuth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring10-Security-HttpBasic-AuthorizationRoleBase/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring10-Security-HttpBasic-DB/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
   </component>
 </project>

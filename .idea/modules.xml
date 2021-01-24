@@ -25,6 +25,9 @@
       <module fileurl="file://$PROJECT_DIR$/Spring09-ORM-Mapping-ManyToMany/Spring09-ORM-Mapping-ManyToMany.iml" filepath="$PROJECT_DIR$/Spring09-ORM-Mapping-ManyToMany/Spring09-ORM-Mapping-ManyToMany.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring09-ORM-Mapping-ManyToOne/Spring09-ORM-Mapping-ManyToOne.iml" filepath="$PROJECT_DIR$/Spring09-ORM-Mapping-ManyToOne/Spring09-ORM-Mapping-ManyToOne.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring09-ORM-TableCreation/Spring09-ORM-TableCreation.iml" filepath="$PROJECT_DIR$/Spring09-ORM-TableCreation/Spring09-ORM-TableCreation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring10-Security-FormAuth/Spring10-Security-FormAuth.iml" filepath="$PROJECT_DIR$/Spring10-Security-FormAuth/Spring10-Security-FormAuth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring10-Security-HttpBasic-AuthorizationRoleBase/Spring10-Security-HttpBasic-AuthorizationRoleBase.iml" filepath="$PROJECT_DIR$/Spring10-Security-HttpBasic-AuthorizationRoleBase/Spring10-Security-HttpBasic-AuthorizationRoleBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring10-Security-HttpBasic-DB/Spring10-Security-HttpBasic-DB.iml" filepath="$PROJECT_DIR$/Spring10-Security-HttpBasic-DB/Spring10-Security-HttpBasic-DB.iml" />
     </modules>
   </component>
 </project>

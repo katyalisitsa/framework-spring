@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring10-Security-FormAuth/Spring10-Security-FormAuth.iml" filepath="$PROJECT_DIR$/Spring10-Security-FormAuth/Spring10-Security-FormAuth.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring10-Security-HttpBasic-AuthorizationRoleBase/Spring10-Security-HttpBasic-AuthorizationRoleBase.iml" filepath="$PROJECT_DIR$/Spring10-Security-HttpBasic-AuthorizationRoleBase/Spring10-Security-HttpBasic-AuthorizationRoleBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring10-Security-HttpBasic-DB/Spring10-Security-HttpBasic-DB.iml" filepath="$PROJECT_DIR$/Spring10-Security-HttpBasic-DB/Spring10-Security-HttpBasic-DB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring11-Rest-HttpVerbs-Legacy/Spring11-Rest-HttpVerbs-Legacy.iml" filepath="$PROJECT_DIR$/Spring11-Rest-HttpVerbs-Legacy/Spring11-Rest-HttpVerbs-Legacy.iml" />
     </modules>
   </component>
 </project>

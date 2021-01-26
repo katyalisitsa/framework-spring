@@ -34,14 +34,14 @@
         <sourceOutputDir name="../target/generated-sources/annotations" />
         <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Spring04-BeanLifeCycle-InitAndDestroyMethod" />
         <module name="Spring02-DependencyInjection-SetterInjection" />
-        <module name="Spring03-BeanScopeSingleton-Protopype" />
       </profile>
-      <profile name="Annotation profile for Spring04-BeanLifeCycle-InitAndDestroyMethod" enabled="true">
+      <profile name="Annotation profile for Spring03-BeanScopeSingleton-Protopype" enabled="true">
         <sourceOutputDir name="../Spring02-DependencyInjection-SetterInjection/target/generated-sources/annotations" />
         <sourceTestOutputDir name="../Spring02-DependencyInjection-SetterInjection/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring04-BeanLifeCycle-InitAndDestroyMethod" />
+        <module name="Spring03-BeanScopeSingleton-Protopype" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

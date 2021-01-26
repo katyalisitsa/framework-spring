@@ -22,6 +22,12 @@ public class ProductController {
         return productService.getProduct(id);
     }
 
+    @RequestMapping(value = "products", method = RequestMethod.GET)
+    public @ResponseBody
+    List<Product> getProducts() {
+        return productService.getProducts();
+    }
+
     @RequestMapping(value = "products", method = RequestMethod.POST)
     public @ResponseBody
     List<Product> createProduct(@RequestBody Product product) {
@@ -33,6 +39,12 @@ public class ProductController {
     List<Product> updateProduct(@PathVariable("id") long id, @RequestBody Product product) {
         return productService.updateProduct(id, product);
 
+    }
+
+    @RequestMapping(value = "products/{id}", method = RequestMethod.DELETE)
+    public @ResponseBody
+    List<Product> delete(@PathVariable("id") long id) {
+        return productService.delete(id);
     }
 
 }

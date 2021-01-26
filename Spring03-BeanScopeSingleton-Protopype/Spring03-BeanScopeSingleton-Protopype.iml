@@ -6,8 +6,17 @@
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
-    <output url="file://$MODULE_DIR$/../Spring04-BeanLifeCycle-InitAndDestroyMethod/target/classes" />
-    <output-test url="file://$MODULE_DIR$/../Spring04-BeanLifeCycle-InitAndDestroyMethod/target/test-classes" />
+    <output url="file://$MODULE_DIR$/../Spring02-DependencyInjection-SetterInjection/target/classes" />
+    <output-test url="file://$MODULE_DIR$/../Spring02-DependencyInjection-SetterInjection/target/test-classes" />
+    <content url="file://$MODULE_DIR$/../Spring02-DependencyInjection-SetterInjection/src/main/java">
+      <sourceFolder url="file://$MODULE_DIR$/../Spring02-DependencyInjection-SetterInjection/src/main/java" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../Spring02-DependencyInjection-SetterInjection/src/main/resources">
+      <sourceFolder url="file://$MODULE_DIR$/../Spring02-DependencyInjection-SetterInjection/src/main/resources" type="java-resource" />
+    </content>
+    <content url="file://$MODULE_DIR$/../Spring02-DependencyInjection-SetterInjection/src/test/java">
+      <sourceFolder url="file://$MODULE_DIR$/../Spring02-DependencyInjection-SetterInjection/src/test/java" isTestSource="true" />
+    </content>
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />

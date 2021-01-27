@@ -3,6 +3,7 @@ package com.restresponseentiry.controller;
 import com.restresponseentiry.entity.Product;
 import com.restresponseentiry.service.ProductService;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,8 +20,9 @@ public class ProductController {
     }
 
     @GetMapping(value = "{id}")
-    public Product getProduct(@PathVariable("id") long id) {
-        return productService.getProduct(id);
+    public ResponseEntity<Product> getProduct(@PathVariable("id") long id) {
+
+        return ResponseEntity.ok(productService.getProduct(id));
     }
 
     @GetMapping
@@ -37,8 +39,14 @@ public class ProductController {
     }
 
     @PostMapping
-    public List<Product> createProduct(@RequestBody Product product) {
-        return productService.createProduct(product);
+    public ResponseEntity<List<Product>> createProduct(@RequestBody Product product) {
+
+        List<Product> set = productService.createProduct(product);
+        return ResponseEntity
+                .status(HttpStatus.CREATED)
+                .header("Version", "Kate.v2")
+                .header("Operation", "Create")
+                .body(set);
     }
 
     @PutMapping(value = "{id}")

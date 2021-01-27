@@ -11,6 +11,7 @@
         <module name="Spring05-JavaAnnotations-Component" />
         <module name="Spring05-JavaAnnotations-Value" />
         <module name="Spring11-Rest-HttpCreation-Preferred" />
+        <module name="Spring11-Rest-Jackson" />
         <module name="Spring-09-ORM-Mapping-OneToMany" />
         <module name="Spring08-SpringBoot-MVC-Form" />
         <module name="Spring10-Security-HttpBasic-DB" />
@@ -76,6 +77,7 @@
       <module name="Spring10-Security-HttpBasic-DB" target="11" />
       <module name="Spring11-Rest-HttpCreation-Preferred" target="11" />
       <module name="Spring11-Rest-HttpVerbs-Legacy" target="11" />
+      <module name="Spring11-Rest-Jackson" target="11" />
       <module name="Spring11-Rest-ResponseEntity" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -98,6 +100,7 @@
       <module name="Spring10-Security-HttpBasic-DB" options="-parameters" />
       <module name="Spring11-Rest-HttpCreation-Preferred" options="-parameters" />
       <module name="Spring11-Rest-HttpVerbs-Legacy" options="-parameters" />
+      <module name="Spring11-Rest-Jackson" options="-parameters" />
       <module name="Spring11-Rest-ResponseEntity" options="-parameters" />
       <module name="orm" options="-parameters" />
     </option>

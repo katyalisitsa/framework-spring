@@ -22,7 +22,7 @@ public class UserPrincipalDetailsService implements UserDetailsService {
 
         User user = userRepository.findByUsername(s);
 
-        if(user==null){
+        if (user == null) {
             throw new UsernameNotFoundException("User does not exists");
         }
         UserPrincipal userPrincipal = new UserPrincipal(user);

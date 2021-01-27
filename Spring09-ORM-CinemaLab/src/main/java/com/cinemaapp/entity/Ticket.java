@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Ticket extends BaseEntity{
+public class Ticket extends BaseEntity {
 
     private Integer seatNumber;
     private Integer rowNumber;
@@ -20,11 +20,11 @@ public class Ticket extends BaseEntity{
     private LocalDateTime dateTime;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="movie_cinema_id")
+    @JoinColumn(name = "movie_cinema_id")
     private MovieCinema movieCinema;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="user_account_id")
+    @JoinColumn(name = "user_account_id")
     private User user;
 
     public Ticket(Integer seatNumber, Integer rowNumber, LocalDateTime dateTime) {

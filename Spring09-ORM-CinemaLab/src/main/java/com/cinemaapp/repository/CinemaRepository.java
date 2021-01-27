@@ -48,7 +48,7 @@ public interface CinemaRepository extends JpaRepository<Cinema, Long> {
 
 //Write a native query to sort all cinemas by name
 
-    @Query(value = "Select * from cinema order by name",nativeQuery = true)
+    @Query(value = "Select * from cinema order by name", nativeQuery = true)
     List<Cinema> sortAllCinemas();
 
 //Write a native query to distinct all cinemas by sponsored name

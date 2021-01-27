@@ -1,6 +1,7 @@
 package com.restresponseentiry.controller;
 
 import com.restresponseentiry.entity.Product;
+import com.restresponseentiry.entity.ResponseWrapper;
 import com.restresponseentiry.service.ProductService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -73,6 +74,12 @@ public class ProductController {
         List<Product> list = productService.delete(id);
 
         return new ResponseEntity<>(list,responseHttpHeaders,HttpStatus.OK);
+    }
+
+    @GetMapping("/read")
+    public ResponseEntity<ResponseWrapper> readAllProducts(){
+        return ResponseEntity
+                .ok(new ResponseWrapper("products successfully retrieved",productService.getProducts()));
     }
 
 }

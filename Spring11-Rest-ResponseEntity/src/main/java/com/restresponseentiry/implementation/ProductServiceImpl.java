@@ -1,9 +1,10 @@
 package com.restresponseentiry.implementation;
 
 
-import com.apis.entity.Product;
-import com.apis.repository.ProductRepository;
-import com.apis.service.ProductService;
+
+import com.restresponseentiry.entity.Product;
+import com.restresponseentiry.repository.ProductRepository;
+import com.restresponseentiry.service.ProductService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

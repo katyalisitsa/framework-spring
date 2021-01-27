@@ -61,7 +61,7 @@ public class ProductController {
 
         List<Product> list = productService.updateProduct(id, product);
 
-        return new ResponseEntity <>(list, map, HttpStatus.OK);
+        return new ResponseEntity<>(list, map, HttpStatus.OK);
     }
 
     @DeleteMapping(value = "{id}")
@@ -73,13 +73,26 @@ public class ProductController {
 
         List<Product> list = productService.delete(id);
 
-        return new ResponseEntity<>(list,responseHttpHeaders,HttpStatus.OK);
+        return new ResponseEntity<>(list, responseHttpHeaders, HttpStatus.OK);
     }
 
     @GetMapping("/read")
-    public ResponseEntity<ResponseWrapper> readAllProducts(){
+    public ResponseEntity<ResponseWrapper> readAllProducts() {
         return ResponseEntity
-                .ok(new ResponseWrapper("products successfully retrieved",productService.getProducts()));
+                .ok(new ResponseWrapper("products successfully retrieved", productService.getProducts()));
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<ResponseWrapper> deleteProduct(@PathVariable("id") long id) {
+        return ResponseEntity
+                .ok(new ResponseWrapper("product successfully deleted"));
+    }
+
+    @DeleteMapping("/delete2/{id}")
+    public ResponseEntity<ResponseWrapper> deleteProduct2(@PathVariable("id") long id) {
+        return ResponseEntity
+                .status(HttpStatus.ACCEPTED)
+                .body(new ResponseWrapper("product successfully deleted"));
     }
 
 }

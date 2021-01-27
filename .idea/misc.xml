@@ -33,6 +33,7 @@
         <option value="$PROJECT_DIR$/Spring11-Rest-HttpVerbs-Legacy/pom.xml" />
         <option value="$PROJECT_DIR$/Spring11-Rest-HttpCreation-Preferred/pom.xml" />
         <option value="$PROJECT_DIR$/Spring11-Rest-ResponseEntity/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring11-Rest-Jackson/pom.xml" />
       </list>
     </option>
   </component>

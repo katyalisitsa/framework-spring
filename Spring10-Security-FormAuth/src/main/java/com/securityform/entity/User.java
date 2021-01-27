@@ -31,15 +31,15 @@ public class User {
         this.permissions = permissions;
     }
 
-    public List<String> getRoleList(){
-        if(this.roles.length()>0){
+    public List<String> getRoleList() {
+        if (this.roles.length() > 0) {
             return Arrays.asList(this.roles.split(","));
         }
         return new ArrayList<>();
     }
 
-    public List<String> getPermissionList(){
-        if(this.permissions.length()>0){
+    public List<String> getPermissionList() {
+        if (this.permissions.length() > 0) {
             return Arrays.asList(this.permissions.split(","));
         }
         return new ArrayList<>();

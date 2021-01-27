@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository
-public interface MovieCinemaRepository extends JpaRepository<MovieCinema,Long> {
+public interface MovieCinemaRepository extends JpaRepository<MovieCinema, Long> {
 
     // ------------------- DERIVED QUERIES ------------------- //
 //Write a derived query to read movie cinema with id
@@ -49,7 +49,7 @@ public interface MovieCinemaRepository extends JpaRepository<MovieCinema,Long> {
 // ------------------- Native QUERIES ------------------- //
 //Write a native query to count all movie cinemas by cinema id
 
-    @Query(value = "Select count * from movie_cinema where cinema_id = ?1",nativeQuery = true)
+    @Query(value = "Select count * from movie_cinema where cinema_id = ?1", nativeQuery = true)
     int countMovieCinemasByCinemaId(int id);
 
 //Write a native query that returns all movie cinemas by location name

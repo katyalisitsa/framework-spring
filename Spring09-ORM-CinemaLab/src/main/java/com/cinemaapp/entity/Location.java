@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Location extends BaseEntity{
+public class Location extends BaseEntity {
 
     private String name;
     private BigDecimal latitude;

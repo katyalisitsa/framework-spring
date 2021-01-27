@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository
-public interface MovieRepository extends JpaRepository<Movie,Long> {
+public interface MovieRepository extends JpaRepository<Movie, Long> {
 
 
 // ------------------- DERIVED QUERIES ------------------- //

@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository
-public interface TicketRepository extends JpaRepository<Ticket,Long> {
+public interface TicketRepository extends JpaRepository<Ticket, Long> {
 
     // ------------------- DERIVED QUERIES ------------------- //
 //Write a derived query to count how many tickets a user bought

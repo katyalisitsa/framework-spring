@@ -32,6 +32,7 @@
         <option value="$PROJECT_DIR$/Spring10-Security-FormAuth/pom.xml" />
         <option value="$PROJECT_DIR$/Spring11-Rest-HttpVerbs-Legacy/pom.xml" />
         <option value="$PROJECT_DIR$/Spring11-Rest-HttpCreation-Preferred/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring11-Rest-ResponseEntity/pom.xml" />
       </list>
     </option>
   </component>

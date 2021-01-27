@@ -17,27 +17,27 @@ public class ProductController {
         this.productService = productService;
     }
 
-    @RequestMapping(value = "{id}", method = RequestMethod.GET)
+    @GetMapping(value = "{id}")
     public Product getProduct(@PathVariable("id") long id) {
         return productService.getProduct(id);
     }
 
-    @RequestMapping
+    @GetMapping
     public List<Product> getProducts() {
         return productService.getProducts();
     }
 
-    @RequestMapping(method = RequestMethod.POST)
+    @PostMapping
     public List<Product> createProduct(@RequestBody Product product) {
         return productService.createProduct(product);
     }
 
-    @RequestMapping(value = "{id}", method = RequestMethod.PUT)
+    @PutMapping(value = "{id}")
     public List<Product> updateProduct(@PathVariable("id") long id, @RequestBody Product product) {
         return productService.updateProduct(id, product);
     }
 
-    @RequestMapping(value = "{id}", method = RequestMethod.DELETE)
+    @DeleteMapping(value = "{id}")
     public List<Product> delete(@PathVariable("id") long id) {
         return productService.delete(id);
     }

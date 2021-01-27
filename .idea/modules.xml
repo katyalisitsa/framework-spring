@@ -30,6 +30,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring10-Security-HttpBasic-DB/Spring10-Security-HttpBasic-DB.iml" filepath="$PROJECT_DIR$/Spring10-Security-HttpBasic-DB/Spring10-Security-HttpBasic-DB.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring11-Rest-HttpCreation-Preferred/Spring11-Rest-HttpCreation-Preferred.iml" filepath="$PROJECT_DIR$/Spring11-Rest-HttpCreation-Preferred/Spring11-Rest-HttpCreation-Preferred.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring11-Rest-HttpVerbs-Legacy/Spring11-Rest-HttpVerbs-Legacy.iml" filepath="$PROJECT_DIR$/Spring11-Rest-HttpVerbs-Legacy/Spring11-Rest-HttpVerbs-Legacy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring11-Rest-ResponseEntity/Spring11-Rest-ResponseEntity.iml" filepath="$PROJECT_DIR$/Spring11-Rest-ResponseEntity/Spring11-Rest-ResponseEntity.iml" />
     </modules>
   </component>
 </project>

@@ -25,6 +25,7 @@
         <module name="Spring08-SpringBoot-MVC-Model-Thymeleaf" />
         <module name="Spring11-Rest-HttpVerbs-Legacy" />
         <module name="Spring09-ORM-Mapping-ManyToOne" />
+        <module name="Spring11-Rest-ResponseEntity" />
         <module name="Spring07-SpringBoot-Initial" />
         <module name="Spring09-ORM-CinemaLab" />
         <module name="Spring09-ORM-TableCreation" />
@@ -75,6 +76,7 @@
       <module name="Spring10-Security-HttpBasic-DB" target="11" />
       <module name="Spring11-Rest-HttpCreation-Preferred" target="11" />
       <module name="Spring11-Rest-HttpVerbs-Legacy" target="11" />
+      <module name="Spring11-Rest-ResponseEntity" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -96,6 +98,7 @@
       <module name="Spring10-Security-HttpBasic-DB" options="-parameters" />
       <module name="Spring11-Rest-HttpCreation-Preferred" options="-parameters" />
       <module name="Spring11-Rest-HttpVerbs-Legacy" options="-parameters" />
+      <module name="Spring11-Rest-ResponseEntity" options="-parameters" />
       <module name="orm" options="-parameters" />
     </option>
   </component>

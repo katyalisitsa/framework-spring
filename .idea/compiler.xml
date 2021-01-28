@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Spring11-Rest-RestTemplate" />
         <module name="Spring10-Security-HttpBasic-AuthorizationRoleBase" />
         <module name="Spring05-JavaAnnotations-Component" />
         <module name="Spring05-JavaAnnotations-Value" />
@@ -79,6 +80,7 @@
       <module name="Spring11-Rest-HttpVerbs-Legacy" target="11" />
       <module name="Spring11-Rest-Jackson" target="11" />
       <module name="Spring11-Rest-ResponseEntity" target="11" />
+      <module name="Spring11-Rest-RestTemplate" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -102,6 +104,7 @@
       <module name="Spring11-Rest-HttpVerbs-Legacy" options="-parameters" />
       <module name="Spring11-Rest-Jackson" options="-parameters" />
       <module name="Spring11-Rest-ResponseEntity" options="-parameters" />
+      <module name="Spring11-Rest-RestTemplate" options="-parameters" />
       <module name="orm" options="-parameters" />
     </option>
   </component>

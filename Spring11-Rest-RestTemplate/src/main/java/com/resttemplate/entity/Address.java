@@ -19,10 +19,12 @@ public class Address {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Integer id;
+
     private String street;
     private String suite;
     private String city;
     private String zipcode;
+
     @OneToOne(mappedBy = "address")
     @JsonIgnore
     private User user;

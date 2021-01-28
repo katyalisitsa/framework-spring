@@ -35,7 +35,6 @@ public class Parent extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private Status status;
     private String username;
-    private Long addressId;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id")

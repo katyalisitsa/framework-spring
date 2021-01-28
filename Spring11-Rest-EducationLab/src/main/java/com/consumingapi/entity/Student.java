@@ -34,8 +34,6 @@ public class Student extends BaseEntity {
     private Status status;
 
     private String username;
-    private Long addressId;
-    private Long parentId;
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "address_id")

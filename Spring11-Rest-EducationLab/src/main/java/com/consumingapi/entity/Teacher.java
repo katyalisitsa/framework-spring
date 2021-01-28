@@ -40,7 +40,6 @@ public class Teacher extends BaseEntity {
     private Status status;
 
     private String username;
-    private Long addressId;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id")

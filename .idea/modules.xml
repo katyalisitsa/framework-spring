@@ -32,6 +32,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring11-Rest-HttpVerbs-Legacy/Spring11-Rest-HttpVerbs-Legacy.iml" filepath="$PROJECT_DIR$/Spring11-Rest-HttpVerbs-Legacy/Spring11-Rest-HttpVerbs-Legacy.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring11-Rest-Jackson/Spring11-Rest-Jackson.iml" filepath="$PROJECT_DIR$/Spring11-Rest-Jackson/Spring11-Rest-Jackson.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring11-Rest-ResponseEntity/Spring11-Rest-ResponseEntity.iml" filepath="$PROJECT_DIR$/Spring11-Rest-ResponseEntity/Spring11-Rest-ResponseEntity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring11-Rest-RestTemplate/Spring11-Rest-RestTemplate.iml" filepath="$PROJECT_DIR$/Spring11-Rest-RestTemplate/Spring11-Rest-RestTemplate.iml" />
     </modules>
   </component>
 </project>

@@ -17,10 +17,12 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Company {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Integer id;
+
     private String name;
     private String catchPhrase;
     private String bs;

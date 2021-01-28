@@ -22,13 +22,16 @@ public class User {
     private String name;
     private String username;
     private String email;
+
     @JsonIgnore
     private String password;
     private String phone;
     private String website;
+
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id")
     private Address address;
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "company_id")
     private Company company;

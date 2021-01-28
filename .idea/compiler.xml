@@ -15,6 +15,7 @@
         <module name="Spring11-Rest-Jackson" />
         <module name="Spring-09-ORM-Mapping-OneToMany" />
         <module name="Spring08-SpringBoot-MVC-Form" />
+        <module name="Spring11-Rest-EducationLab" />
         <module name="Spring10-Security-HttpBasic-DB" />
         <module name="Spring09-ORM-Mapping-ManyToMany" />
         <module name="Spring06-JavaCode-PostConstruct-PreDestroy" />
@@ -76,6 +77,7 @@
       <module name="Spring10-Security-FormAuth" target="11" />
       <module name="Spring10-Security-HttpBasic-AuthorizationRoleBase" target="11" />
       <module name="Spring10-Security-HttpBasic-DB" target="11" />
+      <module name="Spring11-Rest-EducationLab" target="11" />
       <module name="Spring11-Rest-HttpCreation-Preferred" target="11" />
       <module name="Spring11-Rest-HttpVerbs-Legacy" target="11" />
       <module name="Spring11-Rest-Jackson" target="11" />
@@ -100,6 +102,7 @@
       <module name="Spring10-Security-FormAuth" options="-parameters" />
       <module name="Spring10-Security-HttpBasic-AuthorizationRoleBase" options="-parameters" />
       <module name="Spring10-Security-HttpBasic-DB" options="-parameters" />
+      <module name="Spring11-Rest-EducationLab" options="-parameters" />
       <module name="Spring11-Rest-HttpCreation-Preferred" options="-parameters" />
       <module name="Spring11-Rest-HttpVerbs-Legacy" options="-parameters" />
       <module name="Spring11-Rest-Jackson" options="-parameters" />

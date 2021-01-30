@@ -1,27 +1,34 @@
 package com.consumingapi.controller;
 
+import com.consumingapi.entity.Address;
 import com.consumingapi.entity.ResponseWrapper;
 import com.consumingapi.entity.Teacher;
+import com.consumingapi.repository.AddressRepository;
 import com.consumingapi.repository.ParentRepository;
 import com.consumingapi.repository.StudentRepository;
 import com.consumingapi.repository.TeacherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class ApiController {
 
-    @Autowired
     private TeacherRepository teacherRepository;
-    @Autowired
     private StudentRepository studentRepository;
-    @Autowired
     private ParentRepository parentRepository;
+    private AddressRepository addressRepository;
+
+    public ApiController(TeacherRepository teacherRepository, StudentRepository studentRepository, ParentRepository parentRepository, AddressRepository addressRepository) {
+        this.teacherRepository = teacherRepository;
+        this.studentRepository = studentRepository;
+        this.parentRepository = parentRepository;
+        this.addressRepository = addressRepository;
+    }
 
     @GetMapping("/teachers")
     public List<Teacher> readAllTeachers() {
@@ -41,5 +48,20 @@ public class ApiController {
                 parentRepository.findAll());
 
         return ResponseEntity.status(HttpStatus.ACCEPTED).body(responseWrapper);
+    }
+
+    @PutMapping("/address/{id}")
+    public Address updateAddress(@PathVariable("id") long id, @RequestBody Address address) throws Exception {
+
+        Optional<Address> foundAddress = addressRepository.findById(id);
+
+        if (!foundAddress.isPresent()) {
+            throw new Exception("Address was not found");
+        }
+
+        address.setCurrentTemperature(new Address().consumeTemp(address.getCity()));
+        address.setId(foundAddress.get().getId());
+
+        return addressRepository.save(address);
     }
 }

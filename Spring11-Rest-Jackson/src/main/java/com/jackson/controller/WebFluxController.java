@@ -1,13 +1,11 @@
 package com.jackson.controller;
 
+import com.jackson.entity.Genre;
 import com.jackson.entity.MovieCinema;
 import com.jackson.repository.GenreRepository;
 import com.jackson.repository.MovieCinemaRepository;
 import com.jackson.repository.MovieRepository;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -43,5 +41,11 @@ public class WebFluxController {
     @GetMapping("/mono-movie-cinema")
     public Mono<MovieCinema> readByIdRequestParam(@RequestParam("id") Long id) {
         return Mono.just(movieCinemaRepository.findById(id).get());
+    }
+
+    @PostMapping("/create-genre")
+    public Mono<Genre> createGenre(@RequestBody Genre genre) {
+        Genre createdGenre = genreRepository.save(genre);
+        return Mono.just(createdGenre);
     }
 }

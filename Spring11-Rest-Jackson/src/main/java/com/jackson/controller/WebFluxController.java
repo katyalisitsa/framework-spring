@@ -114,7 +114,7 @@ public class WebFluxController {
     public Mono<Void> deleteWebClient(@PathVariable("id") Long id) {
         return webClient
                 .delete()
-                .uri("/delte-genre/{id}", id)
+                .uri("/delete-genre/{id}", id)
                 .retrieve()
                 .bodyToMono(Void.class);
     }

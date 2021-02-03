@@ -22,4 +22,7 @@ public interface GenreRepository extends JpaRepository<Genre, Long> {
 //
 //    @Query(value = "Select * from genre where name is ilike concat('%',?1,'%')", nativeQuery = true)
 //    List<Genre> findGenresByPatternInName(String pattern);
+
+    @Query(value = "SELECT count(*) from genre g JOIN movie_genre_rel mgr on g.id = mgr.genre_id WHERE g.id = ?1", nativeQuery = true)
+    Integer countGenresNativeQuery(Long id);
 }

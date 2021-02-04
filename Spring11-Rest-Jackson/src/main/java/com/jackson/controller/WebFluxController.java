@@ -110,10 +110,24 @@ public class WebFluxController {
                 .bodyToMono(Genre.class);
     }
 
+//    @DeleteMapping("/delete/{id}")
+//    public Mono<Void> deleteWebClient(@PathVariable("id") Long id) {
+//        return webClient
+//                .delete()
+//                .uri("/delete-genre/{id}", id)
+//                .retrieve()
+//                .bodyToMono(Void.class);
+//    }
+
     @DeleteMapping("/delete/{id}")
-    public Mono<Void> deleteWebClient(@PathVariable("id") Long id) {
-        return webClient
-                .delete()
+    public Mono<Void> deleteWebClient(@PathVariable("id") Long id) throws Exception {
+
+        Integer countGenres = genreRepository.countGenresNativeQuery(id);
+        if (countGenres > 0) {
+            throw new Exception("Genre can't be deleted, is linked by a movie");
+        }
+
+        return webClient.delete()
                 .uri("/delete-genre/{id}", id)
                 .retrieve()
                 .bodyToMono(Void.class);

@@ -5,10 +5,12 @@ import com.jwt.enums.UserState;
 import com.jwt.repository.UserRepository;
 import org.hibernate.service.spi.ServiceException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
 
+@Service
 public class UserService {
     private final UserRepository userRepository;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;

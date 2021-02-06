@@ -18,6 +18,8 @@ public class JWTUtil {
     @Value("${secutiry.jwt.secret-key}")
     private String secret = "katerynakey";
 
+    //GENERATE TOKEN
+
     public String generateToken(User user, String username) {
 
         Map<String, Object> claims = new HashMap<>();
@@ -38,13 +40,23 @@ public class JWTUtil {
                 .signWith(SignatureAlgorithm.HS256, secret).compact();
     }
 
-    //Decode token
+    //DECODE TOKEN
+
     private Claims extractAllClaims(String token) {
         return Jwts.parser().setSigningKey(secret).parseClaimsJws(token).getBody();
     }
 
-    private <T> T extraClaim(String token, Function<Claims, T> claimResolver) {
+    private <T> T extractClaim(String token, Function<Claims, T> claimResolver) {
         final Claims claims = extractAllClaims(token);
         return claimResolver.apply(claims);
     }
+
+    public String extractUsername(String token) {
+        return extractClaim(token, Claims::getSubject);
+    }
+
+    public Date extractExpiration(String token) {
+        return extractClaim(token, Claims::getExpiration);
+    }
+
 }

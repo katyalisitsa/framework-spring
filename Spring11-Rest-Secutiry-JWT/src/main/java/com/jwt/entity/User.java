@@ -1,13 +1,14 @@
 package com.jwt.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.jwt.enums.UserRole;
+import com.jwt.enums.UserState;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
-import javax.servlet.annotation.WebFilter;
 
 @Entity
 @Table(name = "users")

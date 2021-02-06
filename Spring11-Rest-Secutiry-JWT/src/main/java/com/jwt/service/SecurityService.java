@@ -30,7 +30,7 @@ public class SecurityService implements UserDetailsService {
         return new org.springframework.security.core.userdetails.User(foundUser.getUsername(), foundUser.getPassword(), listAuthorities(foundUser));
     }
 
-    private User loadUser(String value) {
+    public User loadUser(String value) {
         boolean isEmail = value.contains("@");
         return isEmail ? userService.readByEmail(value) : userService.readByUsername(value);
     }

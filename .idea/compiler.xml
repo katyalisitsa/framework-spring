@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Spring06-JavaCode-Configuration" />
         <module name="Spring10-Security-HttpBasic-AuthorizationRoleBase" />
         <module name="Spring05-JavaAnnotations-Component" />
         <module name="Spring05-JavaAnnotations-Value" />
@@ -17,39 +18,45 @@
         <module name="Spring10-Security-HttpBasic-DB" />
         <module name="Spring09-ORM-Mapping-ManyToMany" />
         <module name="Spring08-SpringBoot-MVC-Controller" />
-        <module name="Spring07-SpringBoot-Initial" />
-        <module name="Spring09-ORM-CinemaLab" />
+        <module name="Spring01-SpringContainer" />
+        <module name="Spring07-SpringBoot-IoC-DI-Lab" />
         <module name="Spring10-Security-FormAuth" />
         <module name="Spring02-DependencyInjection-ConstructorInjection" />
         <module name="Spring05-JavaAnnotations-Qualifier" />
-        <module name="Spring05-JavaAnnotations-Autowired" />
-        <module name="Spring08-SpringBoot-MVC-Form" />
+        <module name="Spring07-SpringBoot-Initial" />
         <module name="Spring11-Rest-RestTemplate" />
         <module name="Spring08-SpringBoot-MVC-Model-Thymeleaf" />
         <module name="Spring06-JavaCode-PostConstruct-PreDestroy" />
         <module name="Spring09-ORM-Mapping-ManyToOne" />
+        <module name="Spring11-Rest-Secutiry-JWT" />
         <module name="Spring11-Rest-ResponseEntity" />
-        <module name="Spring06-JavaCode-Configuration" />
-        <module name="Spring07-SpringBoot-IoC-DI-Lab" />
+        <module name="Spring08-SpringBoot-MVC-Form" />
+        <module name="Spring09-ORM-CinemaLab" />
         <module name="Spring09-ORM-TableCreation" />
         <module name="Spring11-Rest-EducationLab" />
-        <module name="Spring01-SpringContainer" />
+        <module name="Spring05-JavaAnnotations-Autowired" />
       </profile>
       <profile name="Annotation profile for Spring02-DependencyInjection-SetterInjection" enabled="true">
+        <sourceOutputDir name="../Spring03-BeanScopeSingleton-Protopype/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../Spring03-BeanScopeSingleton-Protopype/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Spring02-DependencyInjection-SetterInjection" />
+      </profile>
+      <profile name="Annotation profile for Spring04-BeanLifeCycle-InitAndDestroyMethod" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Spring04-BeanLifeCycle-InitAndDestroyMethod" />
+      </profile>
+      <profile name="Annotation profile for Spring03-BeanScopeSingleton-Protopype" enabled="true">
         <sourceOutputDir name="../target/generated-sources/annotations" />
         <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring03-BeanScopeSingleton-Protopype" />
-        <module name="Spring02-DependencyInjection-SetterInjection" />
-      </profile>
-      <profile name="Annotation profile for Spring04-BeanLifeCycle-InitAndDestroyMethod" enabled="true">
-        <sourceOutputDir name="../Spring02-DependencyInjection-SetterInjection/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../Spring02-DependencyInjection-SetterInjection/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="Spring04-BeanLifeCycle-InitAndDestroyMethod" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="jwt" target="11" />
       <module name="orm" target="11" />
       <module name="Spring-09-ORM-Mapping-ManyToMany" target="11" />
       <module name="Spring-09-ORM-Mapping-OneToMany" target="11" />
@@ -83,6 +90,7 @@
       <module name="Spring11-Rest-Jackson" target="11" />
       <module name="Spring11-Rest-ResponseEntity" target="11" />
       <module name="Spring11-Rest-RestTemplate" target="11" />
+      <module name="Spring11-Rest-Secutiry-JWT" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -108,6 +116,8 @@
       <module name="Spring11-Rest-Jackson" options="-parameters" />
       <module name="Spring11-Rest-ResponseEntity" options="-parameters" />
       <module name="Spring11-Rest-RestTemplate" options="-parameters" />
+      <module name="Spring11-Rest-Secutiry-JWT" options="-parameters" />
+      <module name="jwt" options="-parameters" />
       <module name="orm" options="-parameters" />
     </option>
   </component>

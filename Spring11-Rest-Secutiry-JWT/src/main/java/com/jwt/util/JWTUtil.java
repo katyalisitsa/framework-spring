@@ -16,7 +16,7 @@ import java.util.function.Function;
 @Component
 public class JWTUtil {
 
-    @Value("${secutiry.jwt.secret-key}")
+    @Value("${security.jwt.secret-key}")
     private String secret = "katerynakey";
 
     //GENERATE TOKEN
@@ -26,7 +26,6 @@ public class JWTUtil {
         Map<String, Object> claims = new HashMap<>();
         claims.put("username", user.getUsername());
         claims.put("email", user.getEmail());
-
         return createToken(claims, user.getUsername());
     }
 
@@ -39,6 +38,7 @@ public class JWTUtil {
                 .setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 10)) //10 hours token validity
                 .signWith(SignatureAlgorithm.HS256, secret).compact();
+
     }
 
     //DECODE TOKEN
@@ -47,9 +47,9 @@ public class JWTUtil {
         return Jwts.parser().setSigningKey(secret).parseClaimsJws(token).getBody();
     }
 
-    private <T> T extractClaim(String token, Function<Claims, T> claimResolver) {
+    private <T> T extractClaim(String token, Function<Claims, T> claimsResolver) {
         final Claims claims = extractAllClaims(token);
-        return claimResolver.apply(claims);
+        return claimsResolver.apply(claims);
     }
 
     public String extractUsername(String token) {
@@ -58,6 +58,7 @@ public class JWTUtil {
 
     public Date extractExpiration(String token) {
         return extractClaim(token, Claims::getExpiration);
+
     }
 
     private Boolean isTokenExpired(String token) {
@@ -66,7 +67,8 @@ public class JWTUtil {
 
     public Boolean validateToken(String token, UserDetails userDetails) {
         final String username = extractUsername(token);
-        return (username.equals(userDetails.getUsername())) && (!isTokenExpired(token));
+        return (username.equals(userDetails.getUsername()) && !isTokenExpired(token));
     }
+
 
 }

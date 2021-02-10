@@ -18,6 +18,7 @@ import java.io.IOException;
 
 @Service
 public class SecurityFilter extends OncePerRequestFilter {
+
     private final JWTUtil jwtUtil;
     private final SecurityService securityService;
 
@@ -25,21 +26,24 @@ public class SecurityFilter extends OncePerRequestFilter {
         this.jwtUtil = jwtUtil;
         this.securityService = securityService;
     }
-
     @Override
     protected void doFilterInternal(HttpServletRequest httpServletRequest,
                                     HttpServletResponse httpServletResponse,
                                     FilterChain filterChain) throws ServletException, IOException {
+
         String authorizationHeader = httpServletRequest.getHeader("Authorization");
         String token = null;
         String username = null;
+
         if (authorizationHeader != null) {
             token = authorizationHeader;
             username = jwtUtil.extractUsername(token);
         }
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             UserDetails userDetails = securityService.loadUserByUsername(username);
+
             if (jwtUtil.validateToken(token, userDetails) && checkIfUserIsValid(username)) {
+
                 UsernamePasswordAuthenticationToken currentUser =
                         new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
                 currentUser

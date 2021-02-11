@@ -16,7 +16,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/users")
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-@PreAuthorize("hasAuthority('ADMIN')")
+//@PreAuthorize("hasAuthority('ADMIN')")
+@PreAuthorize("hasAnyAuthority('USER','ADMIN')")
 public class UserController {
 
     @Autowired

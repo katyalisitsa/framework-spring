@@ -4,6 +4,7 @@ import com.jwt.annotation.DefaultExceptionMessage;
 import com.jwt.entity.AuthenticationRequest;
 import com.jwt.entity.ResponseWrapper;
 import com.jwt.entity.User;
+import com.jwt.exception.ServiceException;
 import com.jwt.service.UserService;
 import com.jwt.util.JWTUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,6 +41,14 @@ public class AuthenticationController {
         String jwtToken = jwtUtil.generateToken(foundUser);
 
         return ResponseEntity.ok(new ResponseWrapper("Login Succesfull!", jwtToken));
+
+    }
+
+    @PostMapping("/create-user")
+    public ResponseEntity<ResponseWrapper> createAccount(@RequestBody User user) throws ServiceException {
+        User createdUser = userService.createUser(user);
+
+        return ResponseEntity.ok(new ResponseWrapper("User has been created successfully", createdUser));
 
     }
 }

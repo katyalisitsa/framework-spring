@@ -1,5 +1,6 @@
 package com.jwt.controller;
 
+import com.jwt.annotation.DefaultExceptionMessage;
 import com.jwt.entity.AuthenticationRequest;
 import com.jwt.entity.ResponseWrapper;
 import com.jwt.entity.User;
@@ -25,19 +26,20 @@ public class AuthenticationController {
 
 
     @PostMapping("/authenticate")
-    public ResponseEntity<ResponseWrapper> doLogin(@RequestBody AuthenticationRequest authenticationRequest){
+    @DefaultExceptionMessage(defaultMessage = "Bad Credentials")
+    public ResponseEntity<ResponseWrapper> doLogin(@RequestBody AuthenticationRequest authenticationRequest) {
 
         String password = authenticationRequest.getPassword();
         String username = authenticationRequest.getUsername();
 
         User foundUser = userService.readByUsername(username);
 
-        UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(username,password);
+        UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(username, password);
         authenticationManager.authenticate(authenticationToken);
 
         String jwtToken = jwtUtil.generateToken(foundUser);
 
-        return ResponseEntity.ok(new ResponseWrapper("Login Succesfull!",jwtToken));
+        return ResponseEntity.ok(new ResponseWrapper("Login Succesfull!", jwtToken));
 
     }
 }

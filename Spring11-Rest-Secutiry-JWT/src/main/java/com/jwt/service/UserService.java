@@ -2,8 +2,8 @@ package com.jwt.service;
 
 import com.jwt.entity.User;
 import com.jwt.enums.UserState;
+import com.jwt.exception.ServiceException;
 import com.jwt.repository.UserRepository;
-import org.hibernate.service.spi.ServiceException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 

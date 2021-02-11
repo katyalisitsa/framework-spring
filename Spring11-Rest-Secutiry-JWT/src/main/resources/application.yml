@@ -22,3 +22,6 @@ spring:
 security:
   jwt:
     secret-key: katerynakey
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

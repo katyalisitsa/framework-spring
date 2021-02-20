@@ -1,8 +1,9 @@
 package com.aop.controller;
 
-import com.restresponseentiry.entity.Product;
-import com.restresponseentiry.entity.ResponseWrapper;
-import com.restresponseentiry.service.ProductService;
+
+import com.aop.entity.Product;
+import com.aop.entity.ResponseWrapper;
+import com.aop.service.ProductService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

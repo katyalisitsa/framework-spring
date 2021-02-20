@@ -1,9 +1,8 @@
 package com.aop.bootstrap;
 
 
-
-import com.restresponseentiry.entity.Product;
-import com.restresponseentiry.repository.ProductRepository;
+import com.aop.entity.Product;
+import com.aop.repository.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
 
 public class DataGenerator implements CommandLineRunner {

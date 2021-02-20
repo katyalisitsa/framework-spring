@@ -1,6 +1,7 @@
 package com.aop.service;
 
-import com.restresponseentiry.entity.Product;
+
+import com.aop.entity.Product;
 
 import java.util.List;
 

@@ -1,10 +1,9 @@
 package com.aop.implementation;
 
 
-
-import com.restresponseentiry.entity.Product;
-import com.restresponseentiry.repository.ProductRepository;
-import com.restresponseentiry.service.ProductService;
+import com.aop.entity.Product;
+import com.aop.repository.ProductRepository;
+import com.aop.service.ProductService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -4,7 +4,9 @@ package com.aop.bootstrap;
 import com.aop.entity.Product;
 import com.aop.repository.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DataGenerator implements CommandLineRunner {
 
     private ProductRepository productRepository;

@@ -41,7 +41,7 @@ public class ProductController {
 
         List<Product> list = productService.getProducts();
 
-        logger.info("After -> Controller:{} - Method:{} - Output Parameters:{}", "ProductController", "getProducts", list.toString());
+        logger.info("After -> Controller:{} - Method:{} - Output Parameters:{}", "ProductController", "getProducts", list);
 
         return list;
     }

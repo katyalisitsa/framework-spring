@@ -4,6 +4,8 @@ package com.aop.controller;
 import com.aop.entity.Product;
 import com.aop.entity.ResponseWrapper;
 import com.aop.service.ProductService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +25,9 @@ public class ProductController {
         this.productService = productService;
     }
 
+
+    Logger logger = LoggerFactory.getLogger(ProductController.class);
+
     @GetMapping(value = "{id}")
     public ResponseEntity<Product> getProduct(@PathVariable("id") long id) {
 
@@ -30,16 +35,15 @@ public class ProductController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Product>> getProducts() {
+    public List<Product> getProducts() {
 
-        HttpHeaders responseHttpHeaders = new HttpHeaders();
-        responseHttpHeaders.set("Version", "Kate.v1");
-        responseHttpHeaders.set("Operation", "Get List");
+        logger.info("Before -> Controller:{} - Method:{} - Input Parameter:{}", "ProductController", "getProducts()");
 
-        return ResponseEntity
-                .ok()
-                .headers(responseHttpHeaders)
-                .body(productService.getProducts());
+        List<Product> list = productService.getProducts();
+
+        logger.info("After -> Controller:{} - Method:{} - Output Parameters:{}", "ProductController", "getProducts", list.toString());
+
+        return list;
     }
 
     @PostMapping

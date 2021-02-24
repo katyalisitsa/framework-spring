@@ -40,8 +40,8 @@ public class LoggingAspect {
     }
 
     @Before("anyProductRepositoryFindById()")
-    public void beforeProductRepoAdvice() {
-        logger.info("--------------------");
+    public void beforeProductRepoAdvice(JoinPoint joinPoint) {
+        logger.info("Before(findById) -> Method {} - Arguments : {} - Target : {}", joinPoint, joinPoint.getArgs(), joinPoint.getTarget());
     }
 
     @Before("anyUpdateOperation()")

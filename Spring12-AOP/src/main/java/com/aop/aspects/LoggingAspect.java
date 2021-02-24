@@ -2,6 +2,7 @@ package com.aop.aspects;
 
 import com.aop.controller.ProductController;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,6 +35,11 @@ public class LoggingAspect {
     }
 
     @Pointcut("execution(* com.aop.repository.ProductRepository.findById(Long))")
-    private void anyProductRepository() {
+    private void anyProductRepositoryFindById() {
+    }
+
+    @Before("anyProductRepositoryFindById()")
+    public void beforeProductRepoAdvice() {
+        logger.info("--------------------");
     }
 }

@@ -29,7 +29,7 @@ public class LoggingAspect {
 //    }
 
 
-    //execution
+    //===========================EXECUTION===========================
 
     @Pointcut("execution(* com.aop.controller.ProductController.up*(..))")
     private void anyUpdateOperation() {
@@ -48,4 +48,15 @@ public class LoggingAspect {
     public void beforeControllerAdvice(JoinPoint joinPoint) {
         logger.info("Before -> Method {} - Arguments : {} - Target : {}", joinPoint, joinPoint.getTarget());
     }
+
+    //===========================WITHIN===========================
+
+    @Pointcut("within(com.aop.controller..*)")
+    private void anyControllerOperation() {
+    }
+
+    @Pointcut("@within(org.springframework.stereotype.Service)")
+    private void anyServiceAnnotatedOperation() {
+    }
+
 }

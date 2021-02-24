@@ -59,4 +59,22 @@ public class LoggingAspect {
     private void anyServiceAnnotatedOperation() {
     }
 
+    @Before("anyServiceAnnotatedOperation() || anyControllerOperation() ")
+    public void beforeControllerAdvice2(JoinPoint joinPoint) {
+        logger.info("Before -> Method {} - Arguments : {} - Target : {}", joinPoint, joinPoint.getArgs(), joinPoint.getTarget());
+    }
+
+    //===========================ANNOTATION===========================
+
+    @Pointcut("@annotation(org.springframework.web.bind.annotation.DeleteMapping)")
+    private void anyDeleteProductOperation() {
+    }
+
+    @Before("anyDeleteProductOperation()")
+    public void beforeControllerAdvice3(JoinPoint joinPoint) {
+        logger.info("Before -> Method {} - Arguments : {} - Target : {}", joinPoint, joinPoint.getArgs(), joinPoint.getTarget());
+
+    }
+
+
 }

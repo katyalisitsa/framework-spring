@@ -1,6 +1,7 @@
 package com.aop.aspects;
 
 import com.aop.controller.ProductController;
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -41,5 +42,10 @@ public class LoggingAspect {
     @Before("anyProductRepositoryFindById()")
     public void beforeProductRepoAdvice() {
         logger.info("--------------------");
+    }
+
+    @Before("anyUpdateOperation()")
+    public void beforeControllerAdvice(JoinPoint joinPoint) {
+        logger.info("Before -> Method {} - Arguments : {} - Target : {}", joinPoint, joinPoint.getTarget());
     }
 }

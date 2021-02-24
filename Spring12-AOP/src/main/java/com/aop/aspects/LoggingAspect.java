@@ -10,6 +10,7 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
@@ -87,7 +88,7 @@ public class LoggingAspect {
     }
 
     @AfterReturning(pointcut = "anyGetProductOperation()", returning = "results")
-    public void afterReturningControllerAdvice(JoinPoint joinPoint, Product results) {
+    public void afterReturningControllerAdvice(JoinPoint joinPoint, ResponseEntity<Product> results) {
         logger.info("After Returning(Mono Result) -> Method : {} - results : {}", joinPoint.getSignature().toShortString());
     }
 

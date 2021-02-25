@@ -4,6 +4,7 @@ package com.aop.controller;
 import com.aop.entity.Product;
 import com.aop.entity.ResponseWrapper;
 import com.aop.service.ProductService;
+import lombok.ToString;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@ToString
 @RestController
 @RequestMapping("/products")
 public class ProductController {
@@ -36,14 +38,11 @@ public class ProductController {
     }
 
     @PostMapping
-    public ResponseEntity<List<Product>> createProduct(@RequestBody Product product) {
+    public List<Product> createProduct(@RequestBody Product product) {
 
         List<Product> set = productService.createProduct(product);
-        return ResponseEntity
-                .status(HttpStatus.CREATED)
-                .header("Version", "Kate.v2")
-                .header("Operation", "Create")
-                .body(set);
+//        return
+        return set;
     }
 
     @PutMapping(value = "{id}")

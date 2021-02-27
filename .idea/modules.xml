@@ -36,6 +36,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring11-Rest-RestTemplate/Spring11-Rest-RestTemplate.iml" filepath="$PROJECT_DIR$/Spring11-Rest-RestTemplate/Spring11-Rest-RestTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring11-Rest-Secutiry-JWT/Spring11-Rest-Secutiry-JWT.iml" filepath="$PROJECT_DIR$/Spring11-Rest-Secutiry-JWT/Spring11-Rest-Secutiry-JWT.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring12-AOP/Spring12-AOP.iml" filepath="$PROJECT_DIR$/Spring12-AOP/Spring12-AOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring13-UnitTesting-Junit5/Spring13-UnitTesting-Junit5.iml" filepath="$PROJECT_DIR$/Spring13-UnitTesting-Junit5/Spring13-UnitTesting-Junit5.iml" />
     </modules>
   </component>
 </project>

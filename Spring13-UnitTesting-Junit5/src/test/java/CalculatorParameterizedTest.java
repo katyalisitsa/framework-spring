@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -44,6 +45,12 @@ public class CalculatorParameterizedTest {
             "20,65,85"
     })
     void testCase5(int num1, int num2, int result) {
+        Assertions.assertEquals(result, Calculator.add(num1, num2));
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/sample-data.csv", numLinesToSkip = 1)
+    void testCase6(int num1, int num2, int result) {
         Assertions.assertEquals(result, Calculator.add(num1, num2));
     }
 }

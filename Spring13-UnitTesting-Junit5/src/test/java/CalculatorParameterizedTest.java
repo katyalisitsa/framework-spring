@@ -1,7 +1,5 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.EmptySource;
-import org.junit.jupiter.params.provider.NullSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 public class CalculatorParameterizedTest {
@@ -20,8 +18,8 @@ public class CalculatorParameterizedTest {
 
     @ParameterizedTest
     @ValueSource(strings = {"Java", "JS", "TS"})
-    @EmptySource
-    @NullSource
+    //@EmptySource
+    //@NullSource
     void testCase3(String args) {
         Assertions.assertTrue(!args.isEmpty());
     }

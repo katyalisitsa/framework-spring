@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.EmptySource;
+import org.junit.jupiter.params.provider.NullSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 public class CalculatorParameterizedTest {
@@ -14,5 +16,13 @@ public class CalculatorParameterizedTest {
     @ValueSource(ints = {3, 6, 9})
     void testCase2(int number) {
         Assertions.assertEquals(0, number % 3);
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {"Java", "JS", "TS"})
+    @EmptySource
+    @NullSource
+    void testCase3(String args) {
+        Assertions.assertTrue(!args.isEmpty());
     }
 }

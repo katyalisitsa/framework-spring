@@ -20,9 +20,11 @@ class CheckingAccountTest {
 
     @Test
     void withdraw() {
+        assertEquals(80, checkingAccount.withdraw(20));
     }
 
     @Test
     void purchase() {
+        assertEquals(-65, checkingAccount.purchase("shoes", 130));
     }
 }

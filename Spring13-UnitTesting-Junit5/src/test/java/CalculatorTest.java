@@ -18,7 +18,7 @@ class CalculatorTest {
 
     @Test
     void testCase2() {
-        assertArrayEquals(new int[]{123}, new int[]{1, 2, 3});
+        assertArrayEquals(new int[]{1,2,3}, new int[]{1, 2, 3});
     }
 
     @Test

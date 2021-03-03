@@ -43,4 +43,18 @@ class ProjectServiceImplTest {
 
         assertNotNull(projectDTO1);
     }
+
+    @Test
+    void getByProjectCode_exception_test() {
+
+        when(projectRepository.findByProjectCode("")).thenThrow(new RuntimeException("Project not found"));
+
+        Throwable exception = assertThrows(RuntimeException.class, () -> projectService.getByProjectCode(""));
+
+        verify(projectRepository).findByProjectCode(Mockito.anyString());
+
+        assertEquals(exception.getMessage(), "Project not found");
+
+
+    }
 }

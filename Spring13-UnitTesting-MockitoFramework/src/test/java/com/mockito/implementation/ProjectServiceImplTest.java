@@ -11,6 +11,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -35,5 +36,9 @@ class ProjectServiceImplTest {
         when(projectMapper.convertToDto(project)).thenReturn(projectDTO);
 
         ProjectDTO projectDTO1 = projectService.getByProjectCode("PR01");
+
+        verify(projectRepository).findByProjectCode("PR01");
+
+        assertNotNull(projectDTO1);
     }
 }

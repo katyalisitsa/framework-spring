@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -38,6 +39,7 @@ class ProjectServiceImplTest {
         ProjectDTO projectDTO1 = projectService.getByProjectCode("PR01");
 
         verify(projectRepository).findByProjectCode("PR01");
+        verify(projectMapper).convertToDto(Mockito.any(Project.class));
 
         assertNotNull(projectDTO1);
     }

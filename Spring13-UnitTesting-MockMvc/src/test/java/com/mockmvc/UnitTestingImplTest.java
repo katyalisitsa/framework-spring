@@ -57,7 +57,7 @@ class UnitTestingImplTest {
         assertEquals(30, actual);
 
         verify(dataRepository).findById(2);
-        verify(dataRepository, times(2)).findById(2);
+        //verify(dataRepository, times(2)).findById(2);
 
     }
 

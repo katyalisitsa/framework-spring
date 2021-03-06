@@ -13,4 +13,12 @@ class UnitTestingImplTest {
         int actual = unitTesting.CalculateSum(new int[]{1, 2, 3});
         assertEquals(6, actual);
     }
+
+    @Test
+    void calculateSumUsingDataService() {
+        DataRepositoryImpl dataRepository = new DataRepositoryImpl();
+        UnitTestingImpl unitTesting = new UnitTestingImpl(dataRepository);
+        int actual = unitTesting.calculateSumUsingDataService();
+        assertEquals(6, actual);
+    }
 }

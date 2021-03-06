@@ -9,6 +9,8 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @WebMvcTest(WelcomeController.class)
 class WelcomeControllerTest {
 
@@ -20,6 +22,8 @@ class WelcomeControllerTest {
 
         RequestBuilder request = MockMvcRequestBuilders.get("/welcome").accept(MediaType.APPLICATION_JSON);
         MvcResult result = mockMvc.perform(request).andReturn();
+
+        assertEquals("welcome", result.getResponse().getContentAsString());
 
     }
 }
